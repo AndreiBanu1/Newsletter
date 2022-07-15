@@ -13,8 +13,8 @@ app.get("/", function(req, res) {
 });
 
 mailchimp.setConfig({
-    apiKey: "a0c83cd5aeed4f29dd28e632246f62cb-us17",
-    server: "us17",
+    apiKey: process.env.API_KEY,
+    server: process.env.SERVER,
   });
 
 app.post("/", function(req, res) {
@@ -53,5 +53,3 @@ app.listen(process.env.PORT || 3000, function() {
     console.log("The server is up and running.")
 });
 
-/* Unique Audiance ID:
-cfebd4d66d */
