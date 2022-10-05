@@ -1,6 +1,5 @@
 require('dotenv').config()
 const express = require('express');
-const bodyParser = require('body-parser');
 const request = require('request');
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
